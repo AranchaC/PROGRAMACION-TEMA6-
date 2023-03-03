@@ -16,7 +16,7 @@ public class Alumno extends Persona implements Evaluable, Comparable<Alumno> {
 		this.nia = nia;
 	}
 	
-	public String getNif2() {
+	public String getNif() {
 		return super.getNif();
 	}
 
@@ -30,12 +30,8 @@ public class Alumno extends Persona implements Evaluable, Comparable<Alumno> {
 		return 6.75;
 	}
 
-
 	public int compareTo(Alumno o) {
-		if (this.getNif2() != o.getNif2());
-		return this.getNif2().compareTo(o.getNif2());
+		if (this.getNif() != o.getNif());
+		return this.getNif().compareTo(o.getNif());
 	}
-
-
-
-}
+}//Alumno

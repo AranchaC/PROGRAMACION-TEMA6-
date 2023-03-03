@@ -20,16 +20,27 @@ public class BolsaSorpresa {
 	}
 	
 	public Object getRandom() {
-		return null;
+		int pos = (int) (Math.random()*tamaño);
+		//entre 0 y ultimo elemento.
+		Object res = new Object();
+		res = objetos[pos];
+		objetos[pos] = null;
+		return res;
 	}
 	
 	public boolean put(Object obj) {
 		if (!(isFull())) {
-			
-		}
-		
+			for (int i=0; i<objetos.length; i++) {
+				if (objetos[i] == null) {
+					objetos[i] = obj;
+					tamaño++;
+				}//if
+			}//for				
+		}//if	
 		return true;
-	}
+	}//put
+	
+	
 
 }
 

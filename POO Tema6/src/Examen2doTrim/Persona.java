@@ -21,9 +21,4 @@ public class Persona {
 	public String toString() {
 		return "Persona con NIF:" + nif;
 	}
-	
-	
-
-
-
-}
+}//persona

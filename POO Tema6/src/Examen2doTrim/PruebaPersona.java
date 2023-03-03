@@ -38,6 +38,7 @@ public class PruebaPersona {
 		claseDaw1[3] = new Alumno("202N",9876);
 		
 		Arrays.sort(claseDaw1);
+		
 		System.out.println("** Grupo de Alumnos: **");
 		for (int i=0; i<claseDaw1.length; i++) {
 			System.out.println(claseDaw1[i]+". Con nota: "+claseDaw1[i].evaluar());
