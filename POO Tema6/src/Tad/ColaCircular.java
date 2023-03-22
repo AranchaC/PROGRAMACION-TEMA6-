@@ -1,6 +1,7 @@
 package Tad;
 
 import java.util.Arrays;
+//prueba
 
 public class ColaCircular implements ColaObjetos {	
 	protected Object[] cola;
